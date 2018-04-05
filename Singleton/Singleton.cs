@@ -5,9 +5,9 @@ using System.Text;
 namespace Singleton
 {
     // this implementation is not thread safe
-    public class Singleton
+    public sealed class Singleton
     {
-        private static Singleton _instance;
+        private static Singleton _instance = null;
 
         private Singleton()
         {
@@ -24,6 +24,11 @@ namespace Singleton
                 }
                 return _instance;
             }
+        }
+
+        public void DoStuff()
+        {
+            // does nothing .. ironic
         }
     }
 }
