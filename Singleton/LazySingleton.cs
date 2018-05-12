@@ -1,30 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Singleton
+﻿namespace Singleton
 {
     // this implementation is thread safe and fast
     public class LazySingleton
     {
         private LazySingleton()
         {
-
+            TestString = "Initial";
         }
+        
+        public string TestString { get; set; }
 
-        public static LazySingleton Instance
-        {
-            get { return Nested.instance;  }
-        }
+        public static LazySingleton Instance => Nested.Instance;
 
-        private class Nested
+        private static class Nested
         {
+            internal static readonly LazySingleton Instance = new LazySingleton();
+
             static Nested()
             {
-
             }
-
-            internal static readonly LazySingleton instance = new LazySingleton();
         }
     }
 }
