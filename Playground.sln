@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlaygroundUnitTests", "Play
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq", "Linq\Linq.csproj", "{DB439B5F-4AE1-403B-90F5-5AD60D2DA688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesAndEvents", "DelegatesAndEvents\DelegatesAndEvents.csproj", "{3BE55953-B36C-41AD-BE2C-8523D856C9D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesAndEvents", "DelegatesAndEvents\DelegatesAndEvents.csproj", "{3BE55953-B36C-41AD-BE2C-8523D856C9D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions", "Extensions\Extensions.csproj", "{4CC5776A-E68E-4CD0-8EC1-630E601E1F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patterns.csproj", "{CACDF790-312C-49F8-AC24-49E12828A1BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{3BE55953-B36C-41AD-BE2C-8523D856C9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BE55953-B36C-41AD-BE2C-8523D856C9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BE55953-B36C-41AD-BE2C-8523D856C9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC5776A-E68E-4CD0-8EC1-630E601E1F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC5776A-E68E-4CD0-8EC1-630E601E1F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC5776A-E68E-4CD0-8EC1-630E601E1F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC5776A-E68E-4CD0-8EC1-630E601E1F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACDF790-312C-49F8-AC24-49E12828A1BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACDF790-312C-49F8-AC24-49E12828A1BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACDF790-312C-49F8-AC24-49E12828A1BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACDF790-312C-49F8-AC24-49E12828A1BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

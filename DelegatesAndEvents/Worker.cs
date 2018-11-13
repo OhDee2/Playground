@@ -14,11 +14,13 @@ namespace DelegatesAndEvents
 
         public void DoWork(int hours, WorkType workType)
         {
-            for (int i = 0; i < hours; i++)
+            for (var i = 0; i < hours; i++)
             {
-                
+                System.Threading.Thread.Sleep(1000);
+                OnWorkPerformed(i + 1, workType);
             }
             // raise event
+            OnWorkCompleted();
         }
 
         protected virtual void OnWorkPerformed(int hours, WorkType workType)
@@ -26,7 +28,7 @@ namespace DelegatesAndEvents
             WorkPerformed?.Invoke(this, new WorkPerformedEventArgs(hours, workType));
         }
 
-        protected virtual void OnWorkCompleted(int hours, WorkType workType)
+        protected virtual void OnWorkCompleted()
         {
             WorkCompleted?.Invoke(this, EventArgs.Empty);
         }
